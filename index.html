@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bank Account Management System</h1>
+        <p>Winter Training Program – Project 1</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Create Account</h2>
+            <input type="text" placeholder="Account Holder Name">
+            <input type="number" placeholder="Initial Amount">
+            <select>
+                <option>Savings Account</option>
+                <option>Checking Account</option>
+            </select>
+            <button onclick="demoAction('Account Created')">Create</button>
+        </section>
+
+        <section class="card">
+            <h2>Transactions</h2>
+            <input type="number" placeholder="Transaction Amount">
+            <button onclick="demoAction('Deposit Successful')">Deposit</button>
+            <button onclick="demoAction('Withdraw Successful')">Withdraw</button>
+        </section>
+
+        <section class="card">
+            <h2>Account Info</h2>
+            <button onclick="demoAction('Balance: ₹50,000.00')">Check Balance</button>
+        </section>
+
+        <p class="note">
+            ⚠️ This is a demo web interface.  
+            Actual banking logic is implemented in a Java Swing desktop application.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
